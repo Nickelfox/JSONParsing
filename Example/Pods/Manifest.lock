@@ -1,0 +1,19 @@
+PODS:
+  - JSONParsing (0.1.0):
+    - SwiftyJSON (~> 3.1)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - JSONParsing (from `../`)
+
+EXTERNAL SOURCES:
+  JSONParsing:
+    :path: ../
+
+SPEC CHECKSUMS:
+  JSONParsing: 58e64a9afff1e36156b6d68684ce15558a4aced7
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: bdf66bd1d32fd93dcfd95f4d1fb0c2fedc29cadb
+
+COCOAPODS: 1.1.1
