@@ -10,15 +10,16 @@ enum Test: String, JSONParseRawRepresentable {
 	case three
 }
 
-let jsonData = "{\"data\": [\"one\",\"two\"]}"
+//let jsonData = "{\"data\": [\"one\",\"two\"]}"
+let jsonData = "{\"data\": \"one\"}"
 let data = jsonData.data(using: .utf8)!
 let json = JSON(data: data)
 struct Object: JSONParseable {
 	
-	let values: [Test]
+	let values: Test
 	
 	static func parse(_ json: JSON) throws -> Object {
-		return try Object(values: json["data"]^^)
+		return try Object(values: json["data"].value())
 	}
 	
 }
