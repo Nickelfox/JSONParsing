@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		FBB3F17F2003B9A000994D2F /* AnyErrorKit.h in Headers */ = {isa = PBXBuildFile; fileRef = FBB3F17D2003B9A000994D2F /* AnyErrorKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FBB3F1892003B9FF00994D2F /* AnyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB3F1882003B9FF00994D2F /* AnyError.swift */; };
+		FBF7BADD2004D1410055319B /* AnyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF7BADC2004D1410055319B /* AnyError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FBB3F17A2003B9A000994D2F /* AnyErrorKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AnyErrorKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBB3F17D2003B9A000994D2F /* AnyErrorKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnyErrorKit.h; sourceTree = "<group>"; };
 		FBB3F17E2003B9A000994D2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FBB3F1882003B9FF00994D2F /* AnyError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyError.swift; sourceTree = "<group>"; };
+		FBF7BADC2004D1410055319B /* AnyError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,35 +48,19 @@
 		FBB3F17C2003B9A000994D2F /* AnyErrorKit */ = {
 			isa = PBXGroup;
 			children = (
-				FBB3F1852003B9FF00994D2F /* Source */,
+				FBF7BADB2004D1410055319B /* Classes */,
 				FBB3F17D2003B9A000994D2F /* AnyErrorKit.h */,
 				FBB3F17E2003B9A000994D2F /* Info.plist */,
 			);
 			path = AnyErrorKit;
 			sourceTree = "<group>";
 		};
-		FBB3F1852003B9FF00994D2F /* Source */ = {
+		FBF7BADB2004D1410055319B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				FBB3F1862003B9FF00994D2F /* Classes */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
-		FBB3F1862003B9FF00994D2F /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				FBB3F1872003B9FF00994D2F /* AnyErrorKit */,
+				FBF7BADC2004D1410055319B /* AnyError.swift */,
 			);
 			path = Classes;
-			sourceTree = "<group>";
-		};
-		FBB3F1872003B9FF00994D2F /* AnyErrorKit */ = {
-			isa = PBXGroup;
-			children = (
-				FBB3F1882003B9FF00994D2F /* AnyError.swift */,
-			);
-			path = AnyErrorKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,7 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBB3F1892003B9FF00994D2F /* AnyError.swift in Sources */,
+				FBF7BADD2004D1410055319B /* AnyError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
