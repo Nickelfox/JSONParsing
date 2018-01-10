@@ -36,10 +36,10 @@
 		FBADD6D920050E8500985CF1 /* AnyErrorKit_tvOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AnyErrorKit_tvOS.framework; path = Carthage/Build/tvOS/AnyErrorKit_tvOS.framework; sourceTree = "<group>"; };
 		FBADD6DA20050E8500985CF1 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/tvOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		FBADD6DB20050E8600985CF1 /* AnyErrorKit_macOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AnyErrorKit_macOS.framework; path = Carthage/Build/Mac/AnyErrorKit_macOS.framework; sourceTree = "<group>"; };
-		FBADD6E6200512CA00985CF1 /* JSONParsing_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JSONParsing_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBADD6E6200512CA00985CF1 /* JSONParsing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JSONParsing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBADD6E8200512CA00985CF1 /* JSONParsing_tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONParsing_tvOS.h; sourceTree = "<group>"; };
 		FBADD6E9200512CA00985CF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FBADD6F3200512DC00985CF1 /* JSONParsing_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JSONParsing_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBADD6F3200512DC00985CF1 /* JSONParsing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JSONParsing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBADD6F5200512DC00985CF1 /* JSONParsing_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONParsing_macOS.h; sourceTree = "<group>"; };
 		FBADD6F6200512DC00985CF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBADD9D62006171900985CF1 /* AnyErrorKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AnyErrorKit.framework; path = Carthage/Build/tvOS/AnyErrorKit.framework; sourceTree = "<group>"; };
@@ -128,8 +128,8 @@
 			isa = PBXGroup;
 			children = (
 				FBB3F1942003BAFD00994D2F /* JSONParsing.framework */,
-				FBADD6E6200512CA00985CF1 /* JSONParsing_tvOS.framework */,
-				FBADD6F3200512DC00985CF1 /* JSONParsing_macOS.framework */,
+				FBADD6E6200512CA00985CF1 /* JSONParsing.framework */,
+				FBADD6F3200512DC00985CF1 /* JSONParsing.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -241,7 +241,7 @@
 			);
 			name = "JSONParsing tvOS";
 			productName = "JSONParsing tvOS";
-			productReference = FBADD6E6200512CA00985CF1 /* JSONParsing_tvOS.framework */;
+			productReference = FBADD6E6200512CA00985CF1 /* JSONParsing.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		FBADD6F2200512DC00985CF1 /* JSONParsing macOS */ = {
@@ -260,7 +260,7 @@
 			);
 			name = "JSONParsing macOS";
 			productName = "JSONParsing macOS";
-			productReference = FBADD6F3200512DC00985CF1 /* JSONParsing_macOS.framework */;
+			productReference = FBADD6F3200512DC00985CF1 /* JSONParsing.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		FBB3F1932003BAFD00994D2F /* JSONParsing */ = {
@@ -452,7 +452,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nickelfox.JSONParsing-tvOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = JSONParsing;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -479,7 +479,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nickelfox.JSONParsing-tvOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = JSONParsing;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -509,7 +509,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nickelfox.JSONParsing-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = JSONParsing;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -537,7 +537,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nickelfox.JSONParsing-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = JSONParsing;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
