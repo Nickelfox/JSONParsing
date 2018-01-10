@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FBADD6C920050BAA00985CF1"
+               BlueprintIdentifier = "FBADD9C12006131B00985CF1"
                BuildableName = "AnyErrorKit_macOS.framework"
                BlueprintName = "AnyErrorKit macOS"
                ReferencedContainer = "container:AnyErrorKit.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FBADD6C920050BAA00985CF1"
+            BlueprintIdentifier = "FBADD9C12006131B00985CF1"
             BuildableName = "AnyErrorKit_macOS.framework"
             BlueprintName = "AnyErrorKit macOS"
             ReferencedContainer = "container:AnyErrorKit.xcodeproj">
@@ -65,7 +65,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FBADD6C920050BAA00985CF1"
+            BlueprintIdentifier = "FBADD9C12006131B00985CF1"
             BuildableName = "AnyErrorKit_macOS.framework"
             BlueprintName = "AnyErrorKit macOS"
             ReferencedContainer = "container:AnyErrorKit.xcodeproj">

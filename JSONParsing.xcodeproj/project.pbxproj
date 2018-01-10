@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FBADD6DC20050E8600985CF1 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBADD6D820050E8500985CF1 /* SwiftyJSON.framework */; };
-		FBADD6E02005129800985CF1 /* AnyErrorKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBB3F1BD2003BE5000994D2F /* AnyErrorKit.framework */; };
 		FBADD6EA200512CA00985CF1 /* JSONParsing_tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = FBADD6E8200512CA00985CF1 /* JSONParsing_tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FBADD6F7200512DC00985CF1 /* JSONParsing_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = FBADD6F5200512DC00985CF1 /* JSONParsing_macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FBADD6FB200512FD00985CF1 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBADD6DA20050E8500985CF1 /* SwiftyJSON.framework */; };
-		FBADD6FC200512FD00985CF1 /* AnyErrorKit_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBADD6D920050E8500985CF1 /* AnyErrorKit_tvOS.framework */; };
-		FBADD6FE2005142900985CF1 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBADD6D820050E8500985CF1 /* SwiftyJSON.framework */; };
-		FBADD6FF2005142900985CF1 /* AnyErrorKit_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBADD6DB20050E8600985CF1 /* AnyErrorKit_macOS.framework */; };
+		FBADD9D32006170100985CF1 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBB3F1C02003BFF200994D2F /* SwiftyJSON.framework */; };
+		FBADD9D42006170100985CF1 /* AnyErrorKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBB3F1BD2003BE5000994D2F /* AnyErrorKit.framework */; };
+		FBADD9D52006171800985CF1 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBADD6DA20050E8500985CF1 /* SwiftyJSON.framework */; };
+		FBADD9D72006171900985CF1 /* AnyErrorKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBADD9D62006171900985CF1 /* AnyErrorKit.framework */; };
+		FBADD9D82006175600985CF1 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBADD6D820050E8500985CF1 /* SwiftyJSON.framework */; };
+		FBADD9DA2006175700985CF1 /* AnyErrorKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBADD9D92006175600985CF1 /* AnyErrorKit.framework */; };
 		FBB3F1992003BAFD00994D2F /* JSONParsing.h in Headers */ = {isa = PBXBuildFile; fileRef = FBB3F1972003BAFD00994D2F /* JSONParsing.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FBB3F1AF2003BB4E00994D2F /* JSONParseTransformable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB3F1A22003BB4E00994D2F /* JSONParseTransformable.swift */; };
 		FBB3F1B02003BB4E00994D2F /* JSONParseablePrimitive.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB3F1A32003BB4E00994D2F /* JSONParseablePrimitive.swift */; };
@@ -42,6 +42,8 @@
 		FBADD6F3200512DC00985CF1 /* JSONParsing_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JSONParsing_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBADD6F5200512DC00985CF1 /* JSONParsing_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONParsing_macOS.h; sourceTree = "<group>"; };
 		FBADD6F6200512DC00985CF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBADD9D62006171900985CF1 /* AnyErrorKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AnyErrorKit.framework; path = Carthage/Build/tvOS/AnyErrorKit.framework; sourceTree = "<group>"; };
+		FBADD9D92006175600985CF1 /* AnyErrorKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AnyErrorKit.framework; path = Carthage/Build/Mac/AnyErrorKit.framework; sourceTree = "<group>"; };
 		FBB3F1942003BAFD00994D2F /* JSONParsing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JSONParsing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBB3F1972003BAFD00994D2F /* JSONParsing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONParsing.h; sourceTree = "<group>"; };
 		FBB3F1982003BAFD00994D2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -67,8 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBADD6FB200512FD00985CF1 /* SwiftyJSON.framework in Frameworks */,
-				FBADD6FC200512FD00985CF1 /* AnyErrorKit_tvOS.framework in Frameworks */,
+				FBADD9D72006171900985CF1 /* AnyErrorKit.framework in Frameworks */,
+				FBADD9D52006171800985CF1 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,8 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBADD6FE2005142900985CF1 /* SwiftyJSON.framework in Frameworks */,
-				FBADD6FF2005142900985CF1 /* AnyErrorKit_macOS.framework in Frameworks */,
+				FBADD9DA2006175700985CF1 /* AnyErrorKit.framework in Frameworks */,
+				FBADD9D82006175600985CF1 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,8 +87,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBADD6E02005129800985CF1 /* AnyErrorKit.framework in Frameworks */,
-				FBADD6DC20050E8600985CF1 /* SwiftyJSON.framework in Frameworks */,
+				FBADD9D32006170100985CF1 /* SwiftyJSON.framework in Frameworks */,
+				FBADD9D42006170100985CF1 /* AnyErrorKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +183,8 @@
 		FBB3F1BC2003BE5000994D2F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FBADD9D62006171900985CF1 /* AnyErrorKit.framework */,
+				FBADD9D92006175600985CF1 /* AnyErrorKit.framework */,
 				FBADD6DB20050E8600985CF1 /* AnyErrorKit_macOS.framework */,
 				FBADD6D920050E8500985CF1 /* AnyErrorKit_tvOS.framework */,
 				FBADD6DA20050E8500985CF1 /* SwiftyJSON.framework */,
@@ -351,8 +355,8 @@
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/tvOS/AnyErrorKit_tvOS.framework",
 				"$(SRCROOT)/Carthage/Build/tvOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/tvOS/AnyErrorKit.framework",
 			);
 			outputPaths = (
 			);
@@ -366,8 +370,8 @@
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/Mac/AnyErrorKit_macOS.framework",
 				"$(SRCROOT)/Carthage/Build/Mac/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/Mac/AnyErrorKit.framework",
 			);
 			outputPaths = (
 			);

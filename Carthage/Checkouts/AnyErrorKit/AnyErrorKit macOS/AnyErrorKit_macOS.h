@@ -2,7 +2,7 @@
 //  AnyErrorKit_macOS.h
 //  AnyErrorKit macOS
 //
-//  Created by Vaibhav Parmar on 09/01/18.
+//  Created by Vaibhav Parmar on 10/01/18.
 //  Copyright © 2018 Nickelfox. All rights reserved.
 //
 
