@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import JSONParsing
 
 class ViewController: UIViewController {
 
@@ -23,3 +24,11 @@ class ViewController: UIViewController {
 
 }
 
+struct abc: JSONParseable {
+  
+    var a: String
+    
+    static func parse(_ json: JSON) throws -> abc {
+        return abc(a: json[""]^!)
+    }
+}
