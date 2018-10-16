@@ -7,12 +7,45 @@
 //
 
 import UIKit
+import JSONParsing
+
+enum Test: String, JSONParseRawRepresentable {
+    typealias RawValue = String
+    case one = "one"
+    case two = "two"
+    case three
+}
+
+//let jsonData = "{\"data\": [\"one\",\"two\"]}"
+let jsonData = "{\"data\": \"one\"}"
+let data = jsonData.data(using: .utf8)!
+struct Object: JSONParseable {
+    
+    let values: Test
+    
+    static func parse(_ json: JSON) throws -> Object {
+        return try Object(values: json["data"].value())
+    }
+    
+}
+
+
 
 class ViewController: UIViewController {
 
-	override func viewDidLoad() {
-		super.viewDidLoad()
-		// Do any additional setup after loading the view, typically from a nib.
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        do {
+            let json = try JSON(data: data)
+            let object = try Object.parse(json)
+            print(object.values)
+        } catch {
+            print(error)
+        }
+
 	}
 
 	override func didReceiveMemoryWarning() {
