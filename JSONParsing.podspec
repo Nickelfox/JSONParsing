@@ -25,6 +25,6 @@ A wrapper over SwiftyJSON for handling parsing json objects for iOS by Fox Labs.
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'Source/**/*'  
-  s.dependency 'SwiftyJSON', '~> 3.1'
+  s.dependency 'SwiftyJSON', '~> 4.0'
   s.dependency 'AnyErrorKit', '~> 0.1.1'
 end
