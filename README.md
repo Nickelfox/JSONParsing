@@ -2,30 +2,6 @@
 
 `JSONParsing` is a wrapper around SwiftyJSON to Parse JSON with even more understandability.
 
-## Installation
-#### <i class="icon-file"></i>**CocoaPods**
-[CocoaPods](https://cocoapods.org) is the dependency manager for Cocoa Libraries. You can install Cocoapods using following command:
-
-> `$ sudo gem install cocoapods`
-
-If you wish to integrate `JSONParsing` in your project, the make following changes in your `Podfile`:
-  
-```  
-    platform :ios, '9.0'
-    use_frameworks!
-    target 'YourAppName' do
-      pod 'JSONParsing'
-    end
- ```
-   
-After saving `Podfile`. Run following command:
-
-    pod install
-
-#### <i class="icon-pencil"></I>**Manually**
-If you don't want to use any dependency manager in your project, you can install this library manually too.
-Just add `Source` folder to your project.
-
 # Usage
 
 Let’s take an example of a `JSON`: 
@@ -297,6 +273,29 @@ It also supports all possible combinations of nested arrays & dictionaries as yo
 
 Finally, it also supports `associated types` through the use of a transformer, if required confirm that type to JSONParseTransformable, just like the example above to parse `Date`.
 
+## Installation
+#### <i class="icon-file"></i>**CocoaPods**
+[CocoaPods](https://cocoapods.org) is the dependency manager for Cocoa Libraries. You can install Cocoapods using the following command:
+
+> `$ sudo gem install cocoapods`
+
+If you wish to integrate `JSONParsing` in your project, then make following changes in your `Podfile`:
+  
+```  
+    platform :ios, '9.0'
+    use_frameworks!
+    target 'YourAppName' do
+      pod 'JSONParsing'
+    end
+ ```
+   
+After saving `Podfile`. Run the following command:
+
+    pod install
+
+#### <i class="icon-pencil"></I>**Manually**
+If you don't want to use any dependency manager in your project, you can install this library manually too.
+Just download and add the `Source` folder to your project.
 
 
 
