@@ -8,7 +8,7 @@
 
 > `$ sudo gem install cocoapods`
 
-If you wish to integrate FormValidator in your project, the make following changes in your `Podfile`:
+If you wish to integrate `JSONParsing` in your project, the make following changes in your `Podfile`:
   
 ```  
     platform :ios, '9.0'
@@ -24,13 +24,7 @@ After saving `Podfile`. Run following command:
 
 #### <i class="icon-pencil"></I>**Manually**
 If you don't want to use any dependency manager in your project, you can install this library manually too.
-Just add the following lines to your `Podfile`:
-
-    pod "JSONParsing", :git => 'https://github.com/Nickelfox/JSONParsing'
-
-After saving Podfile, run following:
-
-     pod install
+Just add `Source` folder to your project.
 
 # Usage
 
