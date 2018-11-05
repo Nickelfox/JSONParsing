@@ -1,4 +1,24 @@
-# JSONParsing
+<p align="center">
+<img src="logo.png" width="150" max-width="50%" alt="Fox Labs" />
+</p>
+
+<p align="center">
+<a href="https://github.com/Nickelfox">Fox Labs</a>
+|
+<a href="https://github.com/Nickelfox/JSONParsing">JSONParsing</a>
+</p>
+
+<p align="center">
+<a href="https://cocoapods.org/pods/JSONParsing">
+<img src="https://img.shields.io/cocoapods/v/JSONParsing.svg" alt="CocoaPods" />
+</a>
+<a href="https://github.com/Carthage/Carthage">
+<img src="https://img.shields.io/badge/carthage-compatible-4BC51D.svg?style=flat" alt="Carthage" />
+</a>
+<a href="https://nickelfox.com">
+<img src="https://img.shields.io/badge/contact-nickelfox.com-E2142D.svg" alt="Website: https://nickelfox.com" />
+</a>
+</p>
 
 `JSONParsing` is a wrapper around SwiftyJSON to Parse JSON with even more understandability.
 
