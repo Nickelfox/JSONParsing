@@ -16,7 +16,7 @@ public protocol JSONParseRawRepresentable: RawRepresentable, JSONParseable where
 
 public extension JSONParseRawRepresentable {
 	
-	public static func parse(_ json: JSON) throws -> Self {
+    static func parse(_ json: JSON) throws -> Self {
 		if let transformedValue = try Self(rawValue: json^) {
 			return transformedValue
 		} else {

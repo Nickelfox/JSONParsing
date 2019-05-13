@@ -12,7 +12,7 @@ public typealias JSON = SwiftyJSON.JSON
 
 public extension JSON {
 	
-	public var optional: JSON? {
+    var optional: JSON? {
 		if let _ = self.error {
 			return nil
 		} else {
@@ -20,11 +20,11 @@ public extension JSON {
 		}
 	}
 	
-	public func jsonAtKeyPath(keypath: String) -> JSON {
+    func jsonAtKeyPath(keypath: String) -> JSON {
 		return self.jsonAtKeyPaths(keypaths: keypath.components(separatedBy: "."))
 	}
 	
-	public func jsonAtKeyPaths(keypaths: [String]) -> JSON {
+    func jsonAtKeyPaths(keypaths: [String]) -> JSON {
 		if keypaths.isEmpty {
 			return self
 		}

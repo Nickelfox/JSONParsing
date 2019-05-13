@@ -16,7 +16,7 @@ public protocol JSONParseablePrimitive: JSONParseable {
 
 public extension JSONParseablePrimitive {
 	
-	public static func parse(_ json: JSON) throws -> Self {
+    static func parse(_ json: JSON) throws -> Self {
 		if let error = json.error {
 			throw error
 		}
