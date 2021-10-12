@@ -7,6 +7,7 @@
 //
 
 import SwiftyJSON
+import Foundation
 
 public protocol JSONParseablePrimitive: JSONParseable {
 	static func transform(_ number: NSNumber) -> Self?
