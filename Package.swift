@@ -22,7 +22,10 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "JSONParsing",
-            dependencies: ["AnyErrorKit", "SwiftyJSON"],
+            dependencies: [
+                .product(name: "SwiftyJSON", package: "SwiftyJSON"),
+                .product(name: "AnyErrorKit", package: "AnyErrorKit")
+            ],
             path: "Sources"),
         .testTarget(
             name: "JSONParsingTests",
