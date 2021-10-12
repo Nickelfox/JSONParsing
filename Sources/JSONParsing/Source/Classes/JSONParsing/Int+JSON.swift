@@ -7,6 +7,7 @@
 //
 
 import SwiftyJSON
+import Foundation
 
 extension Int: JSONParseablePrimitive {
 	
